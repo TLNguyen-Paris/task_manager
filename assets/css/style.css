@@ -6,7 +6,7 @@
 body {
     min-height: 95vh;
     width: 100%;
-    background-color: #F3F4F6;
+    background: url("./../img/background.jpg");
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,11 +15,10 @@ i {
 }
 
 header {
-    background-color:white ;
     height: 60px;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     border-radius: 15px;
-    margin: 2px 15px 15px 15px;
+    margin: 0 0 15px 0;
 }
 
 nav {
@@ -57,13 +56,13 @@ section {
 }
 
 main {
-    background-color: white;
+    /* background-color: white; */
     width: 79%;
     min-height: 84vh;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
-    border-radius: 15px;
+    /* border: 2px solid black; */
+    /* border-radius: 15px; */
 }
 
 .tab {
@@ -123,21 +122,24 @@ div hr {
 
 
 aside {
-    background-color: white;
+    /* background-color: white; */
     width:19%;
     min-height: 84vh;
     height: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
 }
 
 aside > div {
     min-height: 84vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border: 2px solid black;
     margin: 20px;
+    gap: 15px;
     border-radius: 15px;
 }
 
@@ -251,3 +253,4 @@ aside > div {
     align-items: center;
     gap: 10px;
 }
+
