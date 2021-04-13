@@ -6,7 +6,6 @@ const btns = document.getElementsByClassName("toggle_modal");
 
 for (const btn of btns) {
     btn.onclick = function(){
-        console.log("yes");
         modal.style.display = "block";
     }
 }
