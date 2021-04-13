@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 95vh;
+    width: 100%;
+    background-color: #F3F4F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    color: black;
+}
+
+header {
+    background-color:white ;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 2px 15px 15px 15px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+nav > a:first-child {
+    color:black;
+}
+
+nav > a:nth-child(2) {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    border: 2px solid black ;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+nav > a:nth-child(2):hover {
+    background-color:black ;
+    color: white;
+}
+
+section {
+    margin: 2px 15px 15px 15px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    background-color: white;
+    width: 79%;
+    min-height: 84vh;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.tab {
+    min-height: 300px;
+    height: fit-content;
+    max-width: 175px;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+article div:hover {
+    box-shadow: 7px 4px 4px grey; 
+}
+
+article div span:last-of-type {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+article div span:last-of-type i {
+    color: black;
+}
+
+article h5 {
+    font-size: 1em;
+}
+
+div hr {
+    width: 100%;
+    margin: 2px;
+}
+
+
+aside {
+    background-color: white;
+    width:19%;
+    min-height: 84vh;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+aside > div {
+    min-height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.myButton {
+    margin: 25px;
+    height: 20px;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #888;
+    height: 60%;
+    width: 60%;
+    margin: 10% auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    /* justify-content: space-between; */
+}
+
+.modal_form div {
+    margin: 25px 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_form div:nth-child(5){
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

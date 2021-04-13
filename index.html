@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+    <title>Wireframe Todo List</title>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="modal_form">
+                <div>
+                    <label for="">Title:</label>
+                    <input type="text" placeholder="add title">
+                </div>
+
+                <div>
+                    <label for="">Description:</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="add description task"></textarea>
+                </div>
+
+                <div>
+                    <label for="">Date:</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label for="">Assigned to :</label>
+                    <input type="text" placeholder="Jimmy by Default">
+                </div>
+
+                <div>
+                    <label for="">Status</label>
+                    <input type="checkbox">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#">Dashboard</a>
+            <a href="#"><i class="far fa-user"></i></a>
+        </nav>
+    </header>
+    <section>
+        <main>
+            <div class="tab">
+                <h3>Todo</h3>
+                <article>
+                    <div>
+                        <h5>Learn Bootstrap</h5> <hr>
+                        <p>Learn the bootstrap chapter in codecademy</p> <hr>
+                        <p>Time limit : 22/04/2022</p> <hr>
+                        <p>Assigned to : None</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5>Learn Typescript</h5> <hr>
+                        <p>Learn the Typescript chapter in codecademy</p> <hr>
+                        <p>Time limit : 26/04/2022</p> <hr>
+                        <p>Assigned to : Thanh</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5>Learn Godscript</h5> <hr>
+                        <p>Learn the Godscript by looking through the godfroy documentation</p> <hr>
+                        <p>Time limit : 02/07/2022</p> <hr>
+                        <p>Assigned to : The Whole Class</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                </article>
+                <button class="myButton2 toggle_modal">Add task</button>
+            </div>
+
+            <div class="tab">
+                <h3>In Progress</h3>
+                <article>
+                    <div>
+                        <h5>Learn Mocha</h5> <hr>
+                        <p>Learn the Mocha unit testing with the documentation</p> <hr>
+                        <p>Time limit : 02/10/2022</p> <hr>
+                        <p>Assigned to : Jimmy</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5>Learn VueJS</h5> <hr>
+                        <p>Learn the VueJS with the documentation</p> <hr>
+                        <p>Time limit : 27/04/2022</p> <hr>
+                        <p>Assigned to : Jimmy</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5>Learn ReactJS</h5> <hr>
+                        <p>Learn the React with the documentation</p> <hr>
+                        <p>Time limit : 22/04/2022</p> <hr>
+                        <p>Assigned to : Jimmy</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                </article>
+                <button class="myButton2 toggle_modal">Add task</button>
+            </div>
+
+            <div class="tab">
+                <h3>Review</h3>
+                <article>
+                    <div>
+                        <h5>Learn NodeJS</h5> <hr>
+                        <p>Learn the NodeJS chapter in codecademy</p> <hr>
+                        <p>Time limit : 28/04/2022</p> <hr>
+                        <p>Assigned to : Jimmy</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5>Learn Javascript</h5> <hr>
+                        <p>Learn the Javascript chapter in codecademy</p> <hr>
+                        <p>Time limit : 27/04/2022</p> <hr>
+                        <p>Assigned to : Jimmy </p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                            <a href=""><i class="fas fa-arrow-right"></i></a>
+                        </span>
+                    </div>
+                </article>
+                <button class="myButton2 toggle_modal">Add task</button>
+            </div>
+
+            <div class="tab">
+                <h3>Done</h3>
+                <article>
+                    <div>
+                        <h5>Taunt Jimmy</h5> <hr>
+                        <p>Taunt Jimmy during the class</p> <hr>
+                        <p>Time limit : <br> End of Bootcamp</p> <hr>
+                        <p>Assigned to : The whole class</p>
+                        <span>
+                            Status :
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-arrow-left"></i></a>
+                        </span>
+                    </div>
+                </article>
+                <button class="myButton2 toggle_modal">Add task</button>
+            </div>
+
+            <a href="#" class="myButton">Add Block</a>
+        </main>
+
+        <aside>
+            <div>
+                <h3>History</h3>
+            </div>
+        </aside>
+    </section>
+
+</body>
+<script type="text/javascript" src="./assets/js/script.js"></script>
+</html>
